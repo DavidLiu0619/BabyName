@@ -17,14 +17,13 @@ def get_top_10_names(gender, ethnicity):
 
 # Streamlit app layout
 st.title('Top 10 Baby Names')
-st.write('Select gender and ethnicity to see the top 10 baby names.')
-
 # HTML message with data source and year range
 html_message = """
     <p>This data is from <a href="https://data.cityofnewyork.us/Health/Popular-Baby-Names/25th-nujf/about_data" target="_blank">NYC Open Data</a>.</p>
     <p>The data covers the years 2011-2019.</p>
 """
 st.markdown(html_message, unsafe_allow_html=True)
+st.write('Select gender and ethnicity to see the top 10 baby names.')
 
 # Dropdown menus for gender and ethnicity
 gender = st.selectbox('Gender', baby_names_df['Gender'].unique())

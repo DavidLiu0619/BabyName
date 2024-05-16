@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # Load the dataset
-file_path = 'Popular_Baby_Names_20240515.csv'
+file_path = 'https://raw.githubusercontent.com/DavidLiu0619/BabyNameNYC/main/Popular_Baby_Names_20240515.csv'
 baby_names_df = pd.read_csv(file_path)
 
 # Normalize names to ensure consistency
